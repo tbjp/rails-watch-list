@@ -1,0 +1,7 @@
+<%= simple_form_for [@list, @bookmark] do |b| %>
+  <%# b.input :movie_id, collection: Movie.pluck(:title) %>
+  <%# b.input :movie_id, collection: Movie.all.map { |movie| [movie.title, movie.id] } %>
+  <%= b.association :movie %>
+  <%= b.input :comment %>
+  <%= b.submit 'Submit', class: 'btn btn-primary mt-2' %>
+<% end %>

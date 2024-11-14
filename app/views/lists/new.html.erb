@@ -1,0 +1,10 @@
+<h1>Add a new list</h1>
+<%= simple_form_for @list do |f| %>
+  <%# f.input :name, collection: Movie.pluck(:title) %>
+  <%# f.input :comment %>
+  <%= f.input :name %>
+  <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
+<% end %>
+<%= link_to lists_path do %>
+  <div class="btn btn-primary">Back</div>
+<% end %>
