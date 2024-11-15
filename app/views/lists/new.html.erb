@@ -3,6 +3,7 @@
   <%# f.input :name, collection: Movie.pluck(:title) %>
   <%# f.input :comment %>
   <%= f.input :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
 <% end %>
 <%= link_to lists_path do %>
