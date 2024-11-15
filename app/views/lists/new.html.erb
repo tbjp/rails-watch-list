@@ -1,11 +1,17 @@
-<h1>Add a new list</h1>
-<%= simple_form_for @list do |f| %>
-  <%# f.input :name, collection: Movie.pluck(:title) %>
-  <%# f.input :comment %>
-  <%= f.input :name %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
-<% end %>
-<%= link_to lists_path do %>
-  <div class="btn btn-primary">Back</div>
-<% end %>
+<div class="container d-flex justify-content-center pb-3">
+  <div class="row col-10 col-lg-9 col-xl-10 col-xxl-10 pt-3">
+    <div class="d-flex flex-row justify-content-between">
+      <h1>Add a new list</h1>
+      <%= link_to lists_path do %>
+        <div class="btn btn-primary">Back</div>
+      <% end %>
+    </div>
+    <%= simple_form_for @list do |f| %>
+      <%# f.input :name, collection: Movie.pluck(:title) %>
+      <%# f.input :comment %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit 'Submit', class: 'btn btn-primary mt-2' %>
+    <% end %>
+  </div>
+</div>
