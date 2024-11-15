@@ -4,3 +4,12 @@
 @import "form_legend_clear";
 @import "navbar";
 @import "hero";
+@import "glass";
+
+body {
+  background-image: image-url("placeholder.webp");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
